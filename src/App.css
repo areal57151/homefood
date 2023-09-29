@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
-}
+  
+  h1 {
+    color: red;  /* fallback for old browsers */
+    font-size: 68px;
+    font-family: 'Itim', cursive;
+  }  
+  h2{
+    color: red;
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .search {
+    width: 300px;
+    padding: 10px 20px;
+    background-color:transparent ;
+    margin-left: 80px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color:greenyellow;
+    box-shadow: inset 0px 0px 0px ;
+    border-radius: 20px; 
+    font-family: 'Itim', cursive;
+  }
+  button{
+    width: 130px;
+    padding: 10px  20px;
+    color:greenyellow;
+    background-color:transparent ;
+    font-size: 20px;
+    box-shadow: inset 0px 0px 0px ;
+    border-radius: 20px;
+    font-family: 'Itim', cursive;
+    text-transform: uppercase;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ }
+ img {
+  width: 300px;
+  background-color:transparent;
+  border-radius: 60px;
+  box-shadow: inset 0px 0px 0px;
+  box-shadow: 59px 10px 85px 25px rgba(217,55,19,0.75);
+  -webkit-box-shadow: 59px 10px 85px 25px rgba(217,55,19,0.75);
+  -moz-box-shadow: 59px 10px 85px 25px rgba(217,55,19,0.75);
+ }
+ .main{
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .ingre{
+  width: 450px;
+  color: greenyellow;
+  font-size: 25px;
+  font-family: 'Itim', cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ }
+ 
+  
+   

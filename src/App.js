@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Marquee from "react-fast-marquee";
 import video from './video.mp4';
 import './App.css';
 import MyRecipesComponents from './MyRecipesComponents';
@@ -7,7 +8,7 @@ import MyRecipesComponents from './MyRecipesComponents';
 
   const [mySearch, setMySearch] = useState("");
   const [myRecipes, setMyRecipes] = useState([]);
-  const [wordSubmitted, setWordSubmitted] = useState("tomato");
+  const [wordSubmitted, setWordSubmitted] = useState("barbecued meat");
 
   useEffect(() => {
     const getRecipe = async () => {
@@ -31,11 +32,9 @@ import MyRecipesComponents from './MyRecipesComponents';
       <div className="container">
         <video autoPlay muted loop>
           <source src={video} type="video/mp4" />
-        </video>
-        <marquee>
-          <h1> Pick the best recipe and make the most delicious dish ...</h1>
-        </marquee>
+        </video> 
       </div>
+        <Marquee> <h1>   Pick your best recipe and make the dish of the day...   </h1></Marquee>
       <div className="container">
         <form onSubmit={finalSearch}>
           <input className="search" onChange={myRecipeSearch} value={mySearch}/>
